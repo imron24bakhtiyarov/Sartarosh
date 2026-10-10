@@ -1,320 +1,416 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SARTAROSH — O'g'il bolalar uchun zamonaviy barbershop</title>
-  <meta name="description" content="SARTAROSH — o'g'il bolalar va erkaklar uchun professional barbershop. Soch turmagi, soqol charmbarlash, bolalar kesi. Onlayn bron qiling." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SARTAROSH — o'g'il bolalar va ayollar uchun soch saloni</title>
+<meta name="description" content="SARTAROSH — o'g'il bolalar uchun barbershop va ayollar uchun soch saloni: kesim, fade, ranglash, keratin va turmak. Onlayn yozilish.">
+<meta name="theme-color" content="#0e0a0c">
+<meta property="og:title" content="SARTAROSH — o'g'il bolalar va ayollar uchun soch saloni">
+<meta property="og:description" content="Bolalar kesimi, fade, ranglash va parvarish. Onlayn yozilish.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/hero-woman.jpg">
+<link rel="preload" as="image" href="assets/hero-woman.jpg">
+<link href="assets/fonts.css" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ======= HEADER ======= -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="#home" class="logo">
-        <span class="logo__icon">✦</span>
-        SARTAROSH
-      </a>
+<header class="header" id="header">
+  <div class="shell header__inner">
+    <a class="logo" href="#top" aria-label="SARTAROSH"><span>sartarosh</span><b>.</b><em>salon</em><i aria-hidden="true">✦</i></a>
 
-      <nav class="nav" id="nav">
-        <a href="#home" class="nav__link">Bosh sahifa</a>
-        <a href="hairstyles.html" class="nav__link">Soch turlari</a>
-        <a href="#services" class="nav__link">Xizmatlar</a>
-        <a href="#prices" class="nav__link">Narxlar</a>
-        <a href="#team" class="nav__link">Ustalar</a>
-        <a href="#reviews" class="nav__link">Sharhlar</a>
-        <a href="#contact" class="nav__link">Aloqa</a>
-      </nav>
+    <nav class="nav" id="nav">
+      <a href="#about">Salon haqida</a>
+      <a href="#services">Xizmatlar</a>
+      <a href="#gallery">Ishlarimiz</a>
+      <a href="#prices">Narxlar</a>
+      <a href="hairstyles.html">Soch turlari</a>
+      <a href="#team">Ustalar</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
 
-      <a href="#booking" class="btn btn--gold header__cta">Bron qilish</a>
-
-      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="header__actions">
+      <button class="btn btn--ghost header__login" data-book>Onlayn yozilish</button>
+      <button class="burger" id="burger" aria-label="Menyu"><span></span><span></span></button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- ======= HERO (background video) ======= -->
-  <section class="hero" id="home">
-    <div class="hero__media">
-      <video
-        class="hero__video"
-        id="heroVideo"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        poster="https://assets.mixkit.co/videos/43241/43241-thumb-720-0.jpg"
-      >
-        <source src="https://assets.mixkit.co/videos/43241/43241-720.mp4" type="video/mp4" />
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__media" aria-hidden="true">
+      <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/hero-woman.jpg">
+        <source src="assets/hero-video.mp4" type="video/mp4">
       </video>
-      <div class="hero__overlay"></div>
     </div>
+    <button class="hero__video-toggle" id="heroVideoToggle" aria-label="Videoni to'xtatish">❙❙</button>
 
-    <div class="container hero__content">
-      <p class="hero__eyebrow">Toshkent · Chilonzor · 2014-yildan beri</p>
+    <div class="shell hero__content">
+      <p class="hero__eyebrow anim" style="--d:.15s">sartarosh <b>·</b> o'g'il bolalar va ayollar <b>·</b> Toshkent</p>
+
       <h1 class="hero__title">
-        O'G'IL BOLALAR UCHUN<br />
-        <span>ZAMONAVIY BARBERSHOP</span>
+        <span class="l1">O'g'il bolalar</span>
+        <span class="l2">va ayollar</span>
+        <span class="l3">uchun salon</span>
       </h1>
-      <p class="hero__subtitle">
-        Professional ustalar, o'tkir pichoqlar va bolalarga mos yumshoq kutilish —
-        birinchi soch kesi mijozimiz uchun sovg'a bilan!
-      </p>
 
-      <div class="hero__actions">
-        <a href="#booking" class="btn btn--gold btn--lg">Bron qilish</a>
-        <a href="#services" class="btn btn--ghost btn--lg">Xizmatlar bilan tanishing</a>
+      <div class="hero__offer anim" style="--d:1.1s">
+        <strong>Bir joyda ikki avlod.</strong>
+        <span><i>●</i> Bolalar uchun barbershop va ayollar uchun soch saloni — kesim, ranglash, keratin va turmak.</span>
       </div>
 
-      <div class="hero__stats">
-        <div class="stat"><strong>10 000+</strong><span>bajartirilgan kesim</span></div>
-        <div class="stat"><strong>4.9 ★</strong><span>o'rtacha reyting</span></div>
-        <div class="stat"><strong>6</strong><span>ta professional usta</span></div>
-      </div>
-    </div>
-
-    <button class="video-toggle" id="videoToggle" aria-label="Videoni to'xtatish">❙❙</button>
-    <a href="#services" class="hero__scroll">Pastga suring ↓</a>
-  </section>
-
-  <!-- ======= SERVICES ======= -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="section__head reveal">
-        <p class="section__eyebrow">Nima qilamiz</p>
-        <h2 class="section__title">Bizning xizmatlar</h2>
+      <div class="hero__actions anim" style="--d:1.25s">
+        <button class="btn btn--yellow" data-book>Yozilish <em>↗</em></button>
+        <a class="btn btn--ghost" href="#services">Xizmatlar <em>↗</em></a>
       </div>
 
-      <div class="grid grid--3">
-        <article class="card reveal">
-          <div class="card__icon">✂️</div>
-          <h3>Klassik kesim</h3>
-          <p>Yuvish, kesim, qayta ishlash va yakuniy turmak — an'anaviy barbershop uslubida.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__icon">💈</div>
-          <h3>Zamonaviy turmak</h3>
-          <p>Fade, undercut, pompadour — yuz shaklingizga mos eng trendli kesimlar.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__icon">🪒</div>
-          <h3>Soqol charmbarlash</h3>
-          <p>Issiq sochiq bilan dastlabki muolaja, pichoq bilan tozalash va sovutuvchi losyon.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__icon">👦</div>
-          <h3>Bolalar kesi (0–12)</h3>
-          <p>Sekin, ehtiyotkor va qiziqarli: planshet va o'yinchoqlar bilan bolalar kreslosi.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__icon">🎩</div>
-          <h3>Saql + soch to'plami</h3>
-          <p>To'liq paket: soch kesimi, soqol shakllantirish va issiq sochiq parvarishi.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__icon">🧴</div>
-          <h3>Parvarish va yuvish</h3>
-          <p>Bosh terisi massaji, maska va professional vositalar bilan soch parvarishi.</p>
-        </article>
+      <div class="hero__tags anim" style="--d:1.4s">
+        <span>Bolalar kesimi</span><span>Fade</span><span>Ranglash</span><span>Keratin</span><span>Soch turmagi</span>
       </div>
     </div>
   </section>
 
-  <!-- ======= ABOUT / SPLIT ======= -->
-  <section class="section section--alt" id="about">
-    <div class="container split">
-      <div class="split__media reveal">
-        <img
-          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=900&q=80"
-          alt="Barbershop ichki ko'rinishi"
-          loading="lazy"
-        />
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>sartarosh</span><b>·</b><span>bolalar va ayollar saloni</span><b>·</b><span>o'zingga mos uslub</span><b>·</b>
+      <span>sartarosh</span><b>·</b><span>bolalar va ayollar saloni</span><b>·</b><span>o'zingga mos uslub</span><b>·</b>
+      <span>sartarosh</span><b>·</b><span>bolalar va ayollar saloni</span><b>·</b><span>o'zingga mos uslub</span><b>·</b>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="shell">
+      <p class="section__num reveal">01 / Salon haqida</p>
+      <div class="section__head">
+        <h2 class="reveal">Kichkintoy ham,<br><em>ona</em> ham mamnun.</h2>
+        <div class="section__side reveal">
+          <p>Bizda o'g'il bolalar o'z kreslosida bemalol o'tiradi, ayollar esa o'ziga mos kesim, rang va parvarish topadi. Bir tashrifda butun oilaga qulay.</p>
+          <a class="btn btn--ghost" href="#services">Xizmatlarni ko'rish <em>↗</em></a>
+        </div>
       </div>
-      <div class="split__text reveal">
-        <p class="section__eyebrow">Nima uchun SARTAROSH?</p>
-        <h2 class="section__title">Og'il bola uchun haqiqiy usta</h2>
-        <p>
-          Biz oddiy sartaroshxona emasmiz — bu o'g'il bolalar va yigitlar uchun
-          haqiqiy erkaklar makoni. Har bir mijozga alohida yondashamiz: avval
-          suhbat, keyin kesim.
-        </p>
-        <ul class="checklist">
-          <li>Har bir mijoz uchun alohida jihoz to'plami va sterilizatsiya</li>
-          <li>Bolalar uchun qulay kutilish burchagi: o'yinchoq, kitob, planshet</li>
-          <li>Faqat professional, allergiyasiz parvarish vositalari</li>
-          <li>Birinchi kesim — sovg'a bilan (bosh massaji bepul)</li>
-        </ul>
-        <a href="#booking" class="btn btn--gold">Joy band qilish</a>
+
+      <div class="stats">
+        <div class="stat reveal"><b>2</b><span>yo'nalish</span></div>
+        <div class="stat reveal"><b>40+</b><span>xizmat turi</span></div>
+        <div class="stat reveal"><b>12</b><span>yillik tajriba</span></div>
+        <div class="stat reveal"><b>4.9</b><span>reyting</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ======= PRICES ======= -->
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="shell">
+      <p class="section__num reveal">02 / Ishlarimiz</p>
+      <div class="section__head">
+        <h2 class="reveal">Bizning <em>ishlarimiz</em></h2>
+        <div class="section__side reveal">
+          <p>Har bir obraz — ustamizning qo'li bilan. Rang, hajm va shakl yuzingizga moslanadi.</p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery__item reveal"><img src="assets/works-hair-1.jpg" alt="Yangi kesim" width="900" height="1350" loading="lazy"><figcaption class="gallery__cap">Yangi kesim <i>↗</i></figcaption></figure>
+        <figure class="gallery__item reveal"><img src="assets/works-hair-2.jpg" alt="Qatlamli kesim" width="900" height="600" loading="lazy"><figcaption class="gallery__cap">Qatlamli kesim <i>↗</i></figcaption></figure>
+        <figure class="gallery__item reveal"><img src="assets/works-hair-3.jpg" alt="Ranglash" width="900" height="600" loading="lazy"><figcaption class="gallery__cap">Yangi rang <i>↗</i></figcaption></figure>
+        <figure class="gallery__item reveal"><img src="assets/works-hair-4.jpg" alt="Yakuniy natija" width="900" height="600" loading="lazy"><figcaption class="gallery__cap">Chiroyli natija <i>↗</i></figcaption></figure>
+      </div>
+
+      <div class="vgrid">
+        <figure class="vcard reveal" data-video>
+          <video class="vcard__video" src="assets/videos/woman-01.mp4" muted loop playsinline preload="metadata" aria-label="Ayolga soch kesish jarayoni"></video>
+          <button class="vcard__play" type="button" aria-label="Videoni ijro etish"><span>▶</span></button>
+          <figcaption class="vcard__cap"><span>Soch kesish</span><i>▶</i></figcaption>
+        </figure>
+        <figure class="vcard reveal" data-video>
+          <video class="vcard__video" src="assets/videos/woman-02.mp4" muted loop playsinline preload="metadata" aria-label="Ayol sochiga stilist ishlovi"></video>
+          <button class="vcard__play" type="button" aria-label="Videoni ijro etish"><span>▶</span></button>
+          <figcaption class="vcard__cap"><span>Stilist ishi</span><i>▶</i></figcaption>
+        </figure>
+        <figure class="vcard reveal" data-video>
+          <video class="vcard__video" src="assets/videos/woman-03.mp4" muted loop playsinline preload="metadata" aria-label="Model sochini turmaklash"></video>
+          <button class="vcard__play" type="button" aria-label="Videoni ijro etish"><span>▶</span></button>
+          <figcaption class="vcard__cap"><span>Model turmaklash</span><i>▶</i></figcaption>
+        </figure>
+        <figure class="vcard reveal" data-video>
+          <video class="vcard__video" src="assets/videos/boy-01.mp4" muted loop playsinline preload="metadata" aria-label="O'g'il bolaga soch kesish"></video>
+          <button class="vcard__play" type="button" aria-label="Videoni ijro etish"><span>▶</span></button>
+          <figcaption class="vcard__cap"><span>O'g'il bola kesimi</span><i>▶</i></figcaption>
+        </figure>
+        <figure class="vcard reveal" data-video>
+          <video class="vcard__video" src="assets/videos/boy-02.mp4" muted loop playsinline preload="metadata" aria-label="Bola kesim yakuni"></video>
+          <button class="vcard__play" type="button" aria-label="Videoni ijro etish"><span>▶</span></button>
+          <figcaption class="vcard__cap"><span>Kesim yakuni</span><i>▶</i></figcaption>
+        </figure>
+        <figure class="vcard reveal" data-video>
+          <video class="vcard__video" src="assets/videos/boy-03.mp4" muted loop playsinline preload="metadata" aria-label="Bolaga soch olish jarayoni"></video>
+          <button class="vcard__play" type="button" aria-label="Videoni ijro etish"><span>▶</span></button>
+          <figcaption class="vcard__cap"><span>Bola soch olishi</span><i>▶</i></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--panel" id="services">
+    <div class="shell">
+      <p class="section__num reveal">03 / Xizmatlar</p>
+      <div class="section__head">
+        <h2 class="reveal">Nima <em>qilamiz</em></h2>
+        <div class="section__side reveal">
+          <p>O'g'il bolalar uchun kesimlar va ayollar uchun to'liq parvarish — konsultatsiya va uyda parvarish rejasi bilan. Narxlar usta va soch uzunligiga qarab farq qilishi mumkin.</p>
+          <button class="btn btn--ghost" data-book>Yozilish <em>↗</em></button>
+        </div>
+      </div>
+
+      <div class="services">
+        <article class="service reveal">
+          <div class="service__art"><img src="assets/xizmat-05.jpg" alt="Bolalar kesimi" width="900" height="600" loading="lazy"></div>
+          <span class="service__idx">01</span>
+          <h3>Bolalar kesimi</h3>
+          <p>O'g'il bolalar (0–12) uchun ehtiyotkor klassik va zamonaviy kesimlar. Planshet va o'yinchoq — bepul.</p>
+          <b class="service__price">50 000 so'mdan</b>
+        </article>
+        <article class="service reveal">
+          <div class="service__art"><img src="assets/xizmat-01.jpg" alt="Ayollar soch kesis va fade" width="900" height="600" loading="lazy"></div>
+          <span class="service__idx">02</span>
+          <h3>O'smir fade</h3>
+          <p>13–17 yosh uchun skin, low va klassik fade — maktab va bayramga mos zamonaviy uslub.</p>
+          <b class="service__price">70 000 so'mdan</b>
+        </article>
+        <article class="service reveal">
+          <div class="service__art"><img src="assets/xizmat-06.jpg" alt="Ayollar soch kesis" width="900" height="600" loading="lazy"></div>
+          <span class="service__idx">03</span>
+          <h3>Ayollar soch kesis</h3>
+          <p>Yuz shakliga mos kesim: konuska, qatlamli va uzun variantlar ayollar uchun.</p>
+          <b class="service__price">250 000 so'mdan</b>
+        </article>
+        <article class="service reveal">
+          <div class="service__art"><img src="assets/xizmat-02.jpg" alt="Ranglash" width="900" height="600" loading="lazy"></div>
+          <span class="service__idx">04</span>
+          <h3>Ranglash &amp; balayaj</h3>
+          <p>Air touch, shatush, balayaj va to'liq rang — soch salomatligini saqlab.</p>
+          <b class="service__price">750 000 so'mdan</b>
+        </article>
+        <article class="service reveal">
+          <div class="service__art"><img src="assets/xizmat-03.jpg" alt="Keratin va botox" width="900" height="600" loading="lazy"></div>
+          <span class="service__idx">05</span>
+          <h3>Keratin &amp; botox</h3>
+          <p>Silliq va boshqariladigan soch effekti — 4–6 oy davomida.</p>
+          <b class="service__price">900 000 so'mdan</b>
+        </article>
+        <article class="service reveal">
+          <div class="service__art"><img src="assets/xizmat-04.jpg" alt="Fen va styling" width="900" height="600" loading="lazy"></div>
+          <span class="service__idx">06</span>
+          <h3>Fen &amp; turmak</h3>
+          <p>Hajm, jingalak va har kungi yoki bayram turmalarini shakllantirish.</p>
+          <b class="service__price">180 000 so'mdan</b>
+        </article>
+        <button class="service service--cta reveal" data-book>
+          <span>Qaysi xizmat mos kelishini bilmayapsizmi? Bepul konsultatsiya — ustalar bilan tanishing.</span>
+          <b>Yozilish ↗</b>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICES -->
   <section class="section" id="prices">
-    <div class="container">
-      <div class="section__head reveal">
-        <p class="section__eyebrow">Shaffof narxlar</p>
-        <h2 class="section__title">Xizmatlar bahosi</h2>
+    <div class="shell">
+      <p class="section__num reveal">04 / Narxlar</p>
+      <div class="section__head">
+        <h2 class="reveal">Shaffof <em>narxlar</em></h2>
+        <div class="section__side reveal">
+          <p>Bolalar va ayollar xizmatlari uchun aniq narxlar. Yakuniy narx ish hajmiga qarab usta bilan belgilanadi.</p>
+        </div>
       </div>
 
-      <div class="prices reveal">
-        <div class="price"><span class="price__name">Bolalar kesi (0–12)</span><span class="price__dots"></span><span class="price__val">50 000 so'm</span></div>
-        <div class="price"><span class="price__name">O'smir kesi (13–17)</span><span class="price__dots"></span><span class="price__val">70 000 so'm</span></div>
-        <div class="price"><span class="price__name">Klassik kesim</span><span class="price__dots"></span><span class="price__val">90 000 so'm</span></div>
-        <div class="price"><span class="price__name">Zamonaviy kesim (fade)</span><span class="price__dots"></span><span class="price__val">110 000 so'm</span></div>
-        <div class="price"><span class="price__name">Soqol charmbarlash</span><span class="price__dots"></span><span class="price__val">60 000 so'm</span></div>
-        <div class="price"><span class="price__name">Soch + saqol (to'liq paket)</span><span class="price__dots"></span><span class="price__val">140 000 so'm</span></div>
-        <div class="price"><span class="price__name">Bosh terisi massaji + maska</span><span class="price__dots"></span><span class="price__val">50 000 so'm</span></div>
-        <div class="price"><span class="price__name">To'plar yuvish va fen</span><span class="price__dots"></span><span class="price__val">30 000 so'm</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= TEAM ======= -->
-  <section class="section section--alt" id="team">
-    <div class="container">
-      <div class="section__head reveal">
-        <p class="section__eyebrow">Jamoa</p>
-        <h2 class="section__title">Bizning ustalar</h2>
-      </div>
-
-      <div class="grid grid--4">
-        <article class="person reveal">
-          <div class="person__photo">
-            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80" alt="Usta Jasur" loading="lazy" />
-          </div>
-          <h3>Jasur</h3>
-          <p>Bosh usta · 12 yillik tajriba</p>
-        </article>
-
-        <article class="person reveal">
-          <div class="person__photo">
-            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80" alt="Usta Otabek" loading="lazy" />
-          </div>
-          <h3>Otabek</h3>
-          <p>Fade mutaxassisi · 8 yil</p>
-        </article>
-
-        <article class="person reveal">
-          <div class="person__photo">
-            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80" alt="Usta Bekzod" loading="lazy" />
-          </div>
-          <h3>Bekzod</h3>
-          <p>Bolalar ustasi · 6 yil</p>
-        </article>
-
-        <article class="person reveal">
-          <div class="person__photo">
-            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80" alt="Usta Sardor" loading="lazy" />
-          </div>
-          <h3>Sardor</h3>
-          <p>Saqol va charmbarlash · 9 yil</p>
-        </article>
+      <div class="pricelist reveal">
+        <div class="pricerow"><span class="pricerow__tag">Bolalar</span><span class="pricerow__name">Bolalar kesimi (0–12)</span><span class="pricerow__dots"></span><span class="pricerow__val">50 000 so'm</span></div>
+        <div class="pricerow"><span class="pricerow__tag">Bolalar</span><span class="pricerow__name">O'smir kesim (13–17)</span><span class="pricerow__dots"></span><span class="pricerow__val">70 000 so'm</span></div>
+        <div class="pricerow"><span class="pricerow__tag">Ayollar</span><span class="pricerow__name">Soch kesis</span><span class="pricerow__dots"></span><span class="pricerow__val">250 000 so'm</span></div>
+        <div class="pricerow"><span class="pricerow__tag">Ayollar</span><span class="pricerow__name">Qisqa kesim (pixie)</span><span class="pricerow__dots"></span><span class="pricerow__val">280 000 so'm</span></div>
+        <div class="pricerow"><span class="pricerow__tag">Ayollar</span><span class="pricerow__name">Ranglash / balayaj</span><span class="pricerow__dots"></span><span class="pricerow__val">750 000 so'm</span></div>
+        <div class="pricerow"><span class="pricerow__tag">Ayollar</span><span class="pricerow__name">Keratin &amp; botox</span><span class="pricerow__dots"></span><span class="pricerow__val">900 000 so'm</span></div>
+        <div class="pricerow"><span class="pricerow__tag">Ayollar</span><span class="pricerow__name">Fen &amp; styling</span><span class="pricerow__dots"></span><span class="pricerow__val">180 000 so'm</span></div>
+        <div class="pricerow"><span class="pricerow__tag">Ayollar</span><span class="pricerow__name">Bayram turmagi</span><span class="pricerow__dots"></span><span class="pricerow__val">400 000 so'm</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ======= REVIEWS ======= -->
-  <section class="section" id="reviews">
-    <div class="container">
-      <div class="section__head reveal">
-        <p class="section__eyebrow">Mijozlar fikri</p>
-        <h2 class="section__title">Sharhlar</h2>
+  <!-- HAIR TYPES -->
+  <section class="section section--panel" id="hairtypes">
+    <div class="shell">
+      <p class="section__num reveal">05 / Soch turlari</p>
+      <div class="section__head">
+        <h2 class="reveal">Qaysi <em>uslub</em> sizga?</h2>
+        <div class="section__side reveal">
+          <p>Ayollar uchun eng ko'p tanlanadigan obrazlar. O'g'il bolalar uchun kesimlar katalogini alohida sahifada ko'ring.</p>
+          <a class="btn btn--ghost" href="hairstyles.html">Bolalar katalogi <em>↗</em></a>
+        </div>
       </div>
 
-      <div class="grid grid--3">
-        <blockquote class="quote reveal">
-          <p>"Og'il bolam 5 yoshda, birinchi marta qo'rqmasdan o'tirdi. Usta Bekzod shunaqa chalg'itdiki, bola keyingi safar yana kelmoqchi!"</p>
-          <footer>— Dilshod T., ona</footer>
-        </blockquote>
-
-        <blockquote class="quote reveal">
-          <p>"Fade aynan xuddi rasmday chiqdi. Toza, tez va professional. Endi faqat shu yerga boraman."</p>
-          <footer>— Aziz R., talaba</footer>
-        </blockquote>
-
-        <blockquote class="quote reveal">
-          <p>"Issiq sochiq bilan charmbarlash — alohida keyingi daraja. Narxlari ham ochiq-oydin."</p>
-          <footer>— Kamoliddin A., biznesmen</footer>
-        </blockquote>
+      <div class="htypes">
+        <figure class="htype reveal">
+          <img src="assets/soch-33.jpg" alt="Uzun jingalak kesim" width="900" height="600" loading="lazy">
+          <figcaption><b>01</b><span>Uzun jingalak</span></figcaption>
+        </figure>
+        <figure class="htype reveal">
+          <img src="assets/soch-31.jpg" alt="Qizil rus rangi" width="900" height="1125" loading="lazy">
+          <figcaption><b>02</b><span>Qizil rus rangi</span></figcaption>
+        </figure>
+        <figure class="htype reveal">
+          <img src="assets/soch-36.jpg" alt="Balayaj sarjon" width="900" height="1352" loading="lazy">
+          <figcaption><b>03</b><span>Balayaj · sarjon</span></figcaption>
+        </figure>
+        <figure class="htype reveal">
+          <img src="assets/soch-40.jpg" alt="Qisqa kesim" width="900" height="1200" loading="lazy">
+          <figcaption><b>04</b><span>Qisqa kesim</span></figcaption>
+        </figure>
+        <figure class="htype reveal">
+          <img src="assets/soch-42.jpg" alt="Bang bilan kesim" width="900" height="1350" loading="lazy">
+          <figcaption><b>05</b><span>Bang bilan</span></figcaption>
+        </figure>
+        <figure class="htype reveal">
+          <img src="assets/soch-37.jpg" alt="Qatlamli kesim" width="900" height="1396" loading="lazy">
+          <figcaption><b>06</b><span>Qatlamli kesim</span></figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <!-- ======= BOOKING ======= -->
-  <section class="section section--alt" id="booking">
-    <div class="container booking">
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <div class="shell">
+      <p class="section__num reveal">06 / Ustalar</p>
+      <div class="section__head">
+        <h2 class="reveal">Bizning <em>ustalar</em></h2>
+        <div class="section__side reveal">
+          <p>Bolalar bilan ishlashni yaxshi ko'radigan va ayollar uslubini his qiladigan jamoa.</p>
+        </div>
+      </div>
+
+      <div class="masters__grid">
+        <article class="master reveal">
+          <span class="master__ava">BJ</span>
+          <div class="master__body"><h4>Bekzod J.</h4><p>Bolalar ustasi</p><b>6 yil tajriba <i>★</i> 4.9</b></div>
+          <button class="master__btn" data-book>Yozilish ↗</button>
+        </article>
+        <article class="master reveal">
+          <span class="master__ava">OR</span>
+          <div class="master__body"><h4>Otabek R.</h4><p>Fade &amp; kesim ustasi</p><b>8 yil tajriba <i>★</i> 4.9</b></div>
+          <button class="master__btn" data-book>Yozilish ↗</button>
+        </article>
+        <article class="master reveal">
+          <span class="master__ava">NZ</span>
+          <div class="master__body"><h4>Nigora Z.</h4><p>Kesim &amp; qatlamli ustasi</p><b>8 yil tajriba <i>★</i> 4.9</b></div>
+          <button class="master__btn" data-book>Yozilish ↗</button>
+        </article>
+        <article class="master reveal">
+          <span class="master__ava">ME</span>
+          <div class="master__body"><h4>Malika E.</h4><p>Ranglash &amp; balayaj</p><b>6 yil tajriba <i>★</i> 4.8</b></div>
+          <button class="master__btn" data-book>Yozilish ↗</button>
+        </article>
+        <article class="master reveal">
+          <span class="master__ava">DK</span>
+          <div class="master__body"><h4>Dilnoza K.</h4><p>Keratin &amp; botox</p><b>10 yil tajriba <i>★</i> 5.0</b></div>
+          <button class="master__btn" data-book>Yozilish ↗</button>
+        </article>
+        <article class="master reveal">
+          <span class="master__ava">SH</span>
+          <div class="master__body"><h4>Shahzoda U.</h4><p>Soch turmagi &amp; styling</p><b>7 yil tajriba <i>★</i> 4.9</b></div>
+          <button class="master__btn" data-book>Yozilish ↗</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADDRESSES -->
+  <section class="section section--panel" id="addresses">
+    <div class="shell">
+      <p class="section__num reveal">07 / Manzillar</p>
+      <div class="section__head">
+        <h2 class="reveal">sartarosh<br><em>sizning</em> shahringizda</h2>
+        <div class="section__side reveal">
+          <p>Eng yaqin salonni tanlang — birinchi tashrifda bolaga kichik sovg'a.</p>
+        </div>
+      </div>
+
+      <div class="cities">
+        <a class="city reveal" href="#contact"><b>Toshkent</b><span>Chilonzor 19-kvartal</span><span>Yunusobod 12-mavze</span><i>↗</i></a>
+        <a class="city reveal" href="#contact"><b>Samarqand</b><span>Registon ko'chasi 5</span><i>↗</i></a>
+        <a class="city reveal" href="#contact"><b>Buxoro</b><span>Mustaqillik ko'chasi 21</span><i>↗</i></a>
+        <a class="city reveal" href="#contact"><b>Namangan</b><span>Bobur shoh ko'chasi 33</span><i>↗</i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section" id="booking">
+    <div class="shell booking">
       <div class="booking__text reveal">
-        <p class="section__eyebrow">40 soniyada</p>
-        <h2 class="section__title">Onlayn bron qiling</h2>
-        <p>Formani to'ldiring — administratorimiz 10 daqiqa ichida tasdiqlash uchun qo'ng'iroq qiladi.</p>
+        <p class="section__num">08 / Yozilish</p>
+        <h2 class="section__heading">Onlayn <em>yozilish</em></h2>
+        <p>Formani to'ldiring — administrator 10 daqiqa ichida tasdiqlash uchun qo'ng'iroq qiladi.</p>
         <ul class="checklist">
-          <li>Bekor qilish — bepul, istalgan vaqtda</li>
-          <li>Kechikkaningiz uchun 15 daqiqa imtiyoz</li>
+          <li>Bolalar uchun alohida kreslo va o'yinchoqlar</li>
+          <li>Bekor qilish bepul, istalgan vaqtda</li>
+          <li>Kechikish uchun 15 daqiqa imtiyoz</li>
         </ul>
       </div>
 
       <form class="form reveal" id="bookingForm" novalidate>
-        <label>
-          Tanlangan turmak (katalogdan)
-          <input type="text" name="style" id="styleInput" placeholder="Soch turlari sahifasidan tanlang — ixtiyoriy" />
-        </label>
+        <input type="hidden" name="style" id="styleInput" value="">
         <p class="form__style-note" id="styleNote" hidden>
-          Katalogdan keldi — <a href="hairstyles.html" style="color: var(--gold-soft); text-decoration: underline;">boshqa turmakni tanlash</a>
+          Katalogdan tanlandi — <a href="hairstyles.html">boshqa turmakni tanlash</a>
         </p>
 
         <div class="form__row">
-          <label>
-            Ismingiz *
-            <input type="text" name="name" placeholder="Masalan: Jasur" required />
+          <label>Ismingiz *
+            <input type="text" name="name" placeholder="Masalan: Zilola" required>
           </label>
-          <label>
-            Telefon *
-            <input type="tel" name="phone" placeholder="+998 90 123 45 67" required />
+          <label>Telefon *
+            <input type="tel" name="phone" placeholder="+998 90 123 45 67" required>
           </label>
         </div>
 
         <div class="form__row">
-          <label>
-            Xizmat
+          <label>Xizmat
             <select name="service">
-              <option>Bolalar kesi</option>
-              <option>Klassik kesim</option>
-              <option>Zamonaviy kesim (fade)</option>
-              <option>Soqol charmbarlash</option>
-              <option>Soch + saqol (to'liq paket)</option>
+              <option>Bolalar kesimi</option>
+              <option>O'smir fade</option>
+              <option>Ayollar soch kesis</option>
+              <option>Ranglash / balayaj</option>
+              <option>Keratin &amp; botox</option>
+              <option>Fen &amp; turmak</option>
             </select>
           </label>
-          <label>
-            Usta
+          <label>Usta
             <select name="barber">
               <option>Farqi yo'q</option>
-              <option>Jasur</option>
-              <option>Otabek</option>
-              <option>Bekzod</option>
-              <option>Sardor</option>
+              <option>Bekzod J.</option>
+              <option>Otabek R.</option>
+              <option>Nigora Z.</option>
+              <option>Malika E.</option>
+              <option>Dilnoza K.</option>
+              <option>Shahzoda U.</option>
             </select>
           </label>
         </div>
 
         <div class="form__row">
-          <label>
-            Sana *
-            <input type="date" name="date" required />
+          <label>Sana *
+            <input type="date" name="date" required>
           </label>
-          <label>
-            Vaqt
+          <label>Vaqt
             <select name="time">
               <option>09:00</option><option>10:00</option><option>11:00</option>
               <option>12:00</option><option>13:00</option><option>14:00</option>
@@ -324,60 +420,72 @@
           </label>
         </div>
 
-        <button type="submit" class="btn btn--gold btn--lg btn--block">Bronni tasdiqlash</button>
+        <button type="submit" class="btn btn--yellow btn--block">Yozilish <em>↗</em></button>
         <p class="form__note" id="formNote" role="status"></p>
       </form>
     </div>
   </section>
 
-  <!-- ======= CONTACT / FOOTER ======= -->
-  <footer class="footer" id="contact">
-    <div class="container footer__grid">
-      <div>
-        <a href="#home" class="logo"><span class="logo__icon">✦</span> SARTAROSH</a>
-        <p class="footer__about">O'g'il bolalar va erkaklar uchun zamonaviy barbershop. Toshkent, Chilonzor 19-kvartal.</p>
-      </div>
+</main>
 
-      <div>
-        <h4>Ish vaqti</h4>
-        <ul class="footer__list">
-          <li>Dushanba – Juma: 09:00 – 21:00</li>
-          <li>Shanba: 09:00 – 20:00</li>
-          <li>Yakshanba: 10:00 – 18:00</li>
-        </ul>
-      </div>
+<footer class="footer" id="contact">
+  <div class="shell">
+    <div class="footer__top">
+      <a class="logo logo--big" href="#top" aria-label="SARTAROSH"><span>sartarosh</span><b>.</b><em>salon</em><i aria-hidden="true">✦</i></a>
+      <p>o'g'il bolalar va ayollar uchun</p>
+    </div>
 
-      <div>
-        <h4>Aloqa</h4>
-        <ul class="footer__list">
-          <li><a href="tel:+998901234567">+998 90 123 45 67</a></li>
-          <li><a href="https://t.me/sartarosh" target="_blank" rel="noopener">Telegram: @sartarosh</a></li>
-          <li>Instagram: <a href="https://instagram.com/sartarosh" target="_blank" rel="noopener">@sartarosh</a></li>
-        </ul>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <b>Salon</b>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="hairstyles.html">Bolalar katalogi</a>
+        <a href="#addresses">Manzillar</a>
       </div>
-
-      <div>
-        <h4>Menyu</h4>
-        <ul class="footer__list">
-          <li><a href="hairstyles.html">Soch turlari</a></li>
-          <li><a href="#services">Xizmatlar</a></li>
-          <li><a href="#prices">Narxlar</a></li>
-          <li><a href="#team">Ustalar</a></li>
-          <li><a href="#booking">Bron qilish</a></li>
-        </ul>
+      <div class="footer__col">
+        <b>Aloqa</b>
+        <a href="tel:+998901234567">+998 90 123-45-67</a>
+        <a href="https://t.me/sartarosh" target="_blank" rel="noopener">Telegram ↗</a>
+        <a href="https://instagram.com/sartarosh" target="_blank" rel="noopener">Instagram ↗</a>
+        <span>Dush–Yak: 09:00 – 21:00</span>
+      </div>
+      <div class="footer__col footer__col--right">
+        <button class="btn btn--yellow" data-book>Onlayn yozilish</button>
       </div>
     </div>
 
     <div class="footer__bottom">
-      <div class="container">© <span id="year"></span> SARTAROSH Barbershop. Barcha huquqlar himoyalangan.</div>
+      <span>© <span id="year"></span> sartarosh.salon</span>
+      <a href="#top">Yuqoriga ↑</a>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <!-- Toast -->
-  <div class="toast" id="toast" role="alert"></div>
+<!-- MOBILE MENU -->
+<div class="m-menu" id="m-menu">
+  <nav>
+    <a href="#about">Salon haqida</a>
+    <a href="#services">Xizmatlar</a>
+    <a href="#gallery">Ishlarimiz</a>
+    <a href="#prices">Narxlar</a>
+    <a href="hairstyles.html">Soch turlari</a>
+    <a href="#team">Ustalar</a>
+    <button class="btn btn--yellow" data-book>Onlayn yozilish</button>
+  </nav>
+</div>
 
-  <script src="script.js"></script>
+<!-- COOKIES -->
+<div class="cookies" id="cookies">
+  <p><b>Cookies</b> — sayt ishlashi va qulayligi uchun cookie-lardan foydalanamiz. Davom etsangiz, rozilik bildirasiz.</p>
+  <div>
+    <button class="btn btn--yellow" id="cookie-yes">Qabul qilish</button>
+    <button class="btn btn--ghost" id="cookie-no">Rad etish</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="alert"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-<!-- auto-deploy test -->

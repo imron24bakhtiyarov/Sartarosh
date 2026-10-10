@@ -1,276 +1,262 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Soch turlari — SARTAROSH Barbershop</title>
-  <meta name="description" content="SARTAROSH barbershopdagi soch turmalari katalogi: klassik, fade, undercut, bolalar kesimi va boshqalar. Har bir turmak narxi bilan — tanlang va onlayn bron qiling." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soch turlari — SARTAROSH (bolalar katalogi)</title>
+<meta name="description" content="O'g'il bolalar va o'smirlar uchun soch kesimlari katalogi: klassik, fade, undercut, side part. Har biri narxi bilan — tanlang va onlayn yoziling.">
+<meta name="theme-color" content="#0e0a0c">
+<link href="assets/fonts.css" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ======= HEADER ======= -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="index.html" class="logo">
-        <span class="logo__icon">✦</span>
-        SARTAROSH
-      </a>
+<header class="header is-stuck" id="header">
+  <div class="shell header__inner">
+    <a class="logo" href="index.html" aria-label="SARTAROSH"><span>sartarosh</span><b>.</b><em>salon</em><i aria-hidden="true">✦</i></a>
 
-      <nav class="nav" id="nav">
-        <a href="index.html#home" class="nav__link">Bosh sahifa</a>
-        <a href="hairstyles.html" class="nav__link">Soch turlari</a>
-        <a href="index.html#services" class="nav__link">Xizmatlar</a>
-        <a href="index.html#prices" class="nav__link">Narxlar</a>
-        <a href="index.html#team" class="nav__link">Ustalar</a>
-        <a href="index.html#contact" class="nav__link">Aloqa</a>
-      </nav>
+    <nav class="nav" id="nav">
+      <a href="index.html#about">Salon haqida</a>
+      <a href="index.html#services">Xizmatlar</a>
+      <a href="hairstyles.html">Soch turlari</a>
+      <a href="index.html#prices">Narxlar</a>
+      <a href="index.html#team">Ustalar</a>
+      <a href="index.html#contact">Aloqa</a>
+    </nav>
 
-      <a href="index.html#booking" class="btn btn--gold header__cta">Bron qilish</a>
-
-      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="header__actions">
+      <a class="btn btn--ghost header__login" href="index.html#booking">Onlayn yozilish</a>
+      <button class="burger" id="burger" aria-label="Menyu"><span></span><span></span></button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- ======= PAGE HEAD ======= -->
+<main>
   <section class="page-hero">
-    <div class="container">
-      <p class="section__eyebrow">Katalog</p>
-      <h1 class="section__title">Sochning har xil turlari</h1>
+    <div class="shell">
+      <p class="crumb"><a href="index.html">Bosh sahifa</a> · Katalog</p>
+      <h1 class="section__h1">O'g'il bolalar uchun kesimlar</h1>
       <p class="page-hero__sub">
-        Turmakni tanlang — narxi ko'rsatilgan. "Tanlash" tugmasi bosilganda
-        ushbu turmak bilan bron formasi ochiladi va u avtomatik to'ldiriladi.
+        Turmakni tanlang — narxi ko'rsatilgan. "Tanlash" bosilganda yozilish formasi ochiladi va turmak avtomatik to'ldiriladi.
       </p>
     </div>
   </section>
 
-  <!-- ======= FILTERS ======= -->
-  <section class="section" style="padding-top: 0;">
-    <div class="container">
+  <section class="section catalog" style="border-bottom:0">
+    <div class="shell">
       <div class="filters" id="filters">
         <button class="filter-btn is-active" data-filter="all">Hammasi</button>
         <button class="filter-btn" data-filter="bolalar">Bolalar</button>
         <button class="filter-btn" data-filter="osmir">O'smirlar</button>
         <button class="filter-btn" data-filter="klassik">Klassik</button>
         <button class="filter-btn" data-filter="zamonaviy">Zamonaviy</button>
-        <button class="filter-btn" data-filter="saqol">Saqol bilan</button>
       </div>
 
-      <div class="grid grid--3" id="styleGrid">
+      <div class="rulegrid" id="styleGrid">
 
-        <article class="style-card reveal" data-cat="bolalar">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/17163742/pexels-photo-17163742/free-photo-of-portrait-of-boy.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bolalar klassik kesi" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">Bolalar (0–12)</span>
-            <div class="style-card__head"><h3>Klassik bolalar kesi</h3><span class="style-card__price">50 000</span></div>
+        <article class="rule reveal" data-cat="bolalar">
+          <div class="rule__img"><img src="assets/boys/boy-01.jpg" alt="Klassik bolalar kesi" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Bolalar · 0–12</span>
+            <div class="rule__head"><h3>Klassik bolalar kesi</h3><span class="rule__price">50 000</span></div>
             <p>Yengil, gigienik va o'sishga qulay klassik kesim. Planshet bilan chalg'itamiz.</p>
-            <a class="btn btn--gold" href="index.html?style=Klassik bolalar kesi&service=Bolalar kesi&price=50 000 so'm#booking">Tanlash</a>
+            <a class="btn btn--yellow" href="index.html?style=Klassik bolalar kesi&service=Bolalar kesimi&price=50 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="bolalar">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/16098673/pexels-photo-16098673/free-photo-of-photo-of-a-boy-at-a-barbershop.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bolalar fade" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">Bolalar (0–12)</span>
-            <div class="style-card__head"><h3>Bolalar fade</h3><span class="style-card__price">50 000</span></div>
-            <p>Yon tomonlari asta-sekin qisqaradigan zamonaviy kesim — maktabgacha bolalar uchun ham mos.</p>
-            <a class="btn btn--gold" href="index.html?style=Bolalar fade&service=Bolalar kesi&price=50 000 so'm#booking">Tanlash</a>
+        <article class="rule reveal" data-cat="bolalar">
+          <div class="rule__img"><img src="assets/boys/boy-02.jpg" alt="Bolalar fade" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Bolalar · 0–12</span>
+            <div class="rule__head"><h3>Bolalar fade</h3><span class="rule__price">50 000</span></div>
+            <p>Yon tomonlari asta qisqaradigan zamonaviy kesim — bog'cha va maktab uchun mos.</p>
+            <a class="btn btn--yellow" href="index.html?style=Bolalar fade&service=Bolalar kesimi&price=50 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="osmir">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/18189272/pexels-photo-18189272/free-photo-of-brunette-teenager-boy-with-spiky-brushed-up-hair.jpeg?auto=compress&cs=tinysrgb&w=600" alt="O'smir fade" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">O'smirlar (13–17)</span>
-            <div class="style-card__head"><h3>O'smir fade</h3><span class="style-card__price">70 000</span></div>
+        <article class="rule reveal" data-cat="osmir">
+          <div class="rule__img"><img src="assets/boys/boy-03.jpg" alt="O'smir fade" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">O'smirlar · 13–17</span>
+            <div class="rule__head"><h3>O'smir fade</h3><span class="rule__price">70 000</span></div>
             <p>Skin yoki low fade — o'smirlar orasida eng ko'p so'raladigan turmak.</p>
-            <a class="btn btn--gold" href="index.html?style=O'smir fade&service=Klassik kesim&price=70 000 so'm#booking">Tanlash</a>
+            <a class="btn btn--yellow" href="index.html?style=O'smir fade&service=O'smir fade&price=70 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="osmir">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/17143742/pexels-photo-17143742/free-photo-of-studio-shot-of-a-teenager-with-dark-hair.jpeg?auto=compress&cs=tinysrgb&w=600" alt="O'smir klassikasi" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">O'smirlar (13–17)</span>
-            <div class="style-card__head"><h3>O'smir klassikasi</h3><span class="style-card__price">70 000</span></div>
+        <article class="rule reveal" data-cat="osmir">
+          <div class="rule__img"><img src="assets/boys/boy-04.jpg" alt="O'smir klassikasi" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">O'smirlar · 13–17</span>
+            <div class="rule__head"><h3>O'smir klassikasi</h3><span class="rule__price">70 000</span></div>
             <p>Maktab va rasmiy tadbirlar uchun taralgan, toza ko'rinishdagi an'anaviy kesim.</p>
-            <a class="btn btn--gold" href="index.html?style=O'smir klassikasi&service=Klassik kesim&price=70 000 so'm#booking">Tanlash</a>
+            <a class="btn btn--yellow" href="index.html?style=O'smir klassikasi&service=O'smir fade&price=70 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="klassik">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/34702982/pexels-photo-34702982/free-photo-of-professional-barber-giving-a-classic-haircut.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Klassik kesim" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">Klassik</span>
-            <div class="style-card__head"><h3>Klassik kesim</h3><span class="style-card__price">90 000</span></div>
-            <p>Yuvish, kesim va yakuniy turmak — barcha yoshga mos an'anaviy barbershop uslubi.</p>
-            <a class="btn btn--gold" href="index.html?style=Klassik kesim&service=Klassik kesim&price=90 000 so'm#booking">Tanlash</a>
+        <article class="rule reveal" data-cat="klassik">
+          <div class="rule__img"><img src="assets/boys/boy-05.jpg" alt="Klassik kesim" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Klassik</span>
+            <div class="rule__head"><h3>Klassik kesim</h3><span class="rule__price">90 000</span></div>
+            <p>Yuvish, kesim va yakuniy turmak — har qanday yoshga mos an'anaviy uslub.</p>
+            <a class="btn btn--yellow" href="index.html?style=Klassik kesim&service=O'smir fade&price=90 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="klassik">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/13758247/pexels-photo-13758247.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Side part" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">Klassik</span>
-            <div class="style-card__head"><h3>Side part</h3><span class="style-card__price">90 000</span></div>
-            <p>Yon uchak bilan ajratilgan toza taroq — ofis va tantana uchun ideal.</p>
-            <a class="btn btn--gold" href="index.html?style=Side part&service=Klassik kesim&price=90 000 so'm#booking">Tanlash</a>
+        <article class="rule reveal" data-cat="klassik">
+          <div class="rule__img"><img src="assets/boys/boy-06.jpg" alt="Side part" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Klassik</span>
+            <div class="rule__head"><h3>Side part</h3><span class="rule__price">90 000</span></div>
+            <p>Yon uchak bilan ajratilgan toza taroq — maktab va tantanalar uchun ideal.</p>
+            <a class="btn btn--yellow" href="index.html?style=Side part&service=O'smir fade&price=90 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="klassik">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/7956486/pexels-photo-7956486.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Crew cut" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">Klassik</span>
-            <div class="style-card__head"><h3>Crew cut</h3><span class="style-card__price">90 000</span></div>
-            <p>Qisqa, parvarishi oson va sportga mos universal kesim.</p>
-            <a class="btn btn--gold" href="index.html?style=Crew cut&service=Klassik kesim&price=90 000 so'm#booking">Tanlash</a>
+        <article class="rule reveal" data-cat="zamonaviy">
+          <div class="rule__img"><img src="assets/boys/boy-07.jpg" alt="Skin fade" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Zamonaviy</span>
+            <div class="rule__head"><h3>Skin fade</h3><span class="rule__price">90 000</span></div>
+            <p>Terigacha qisqaruvchi keskin gradient — eng trendli kesim.</p>
+            <a class="btn btn--yellow" href="index.html?style=Skin fade&service=O'smir fade&price=90 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="zamonaviy">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/39559324/pexels-photo-39559324/free-photo-of-modern-fade-haircut-with-sharp-beard-style.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Skin fade" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">Zamonaviy</span>
-            <div class="style-card__head"><h3>Skin fade</h3><span class="style-card__price">110 000</span></div>
-            <p>Terigacha qisqaruvchi keskin gradient — eng trendli barbershop turmagi.</p>
-            <a class="btn btn--gold" href="index.html?style=Skin fade&service=Zamonaviy kesim (fade)&price=110 000 so'm#booking">Tanlash</a>
+        <article class="rule reveal" data-cat="zamonaviy">
+          <div class="rule__img"><img src="assets/boys/boy-08.jpg" alt="Undercut" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Zamonaviy</span>
+            <div class="rule__head"><h3>Undercut</h3><span class="rule__price">90 000</span></div>
+            <p>Yon va orqa qisqa, yuqori qism uzun qoladi — jonli va yorqin ko'rinish.</p>
+            <a class="btn btn--yellow" href="index.html?style=Undercut&service=O'smir fade&price=90 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="zamonaviy">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/4781448/pexels-photo-4781448.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Undercut" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">Zamonaviy</span>
-            <div class="style-card__head"><h3>Undercut</h3><span class="style-card__price">110 000</span></div>
-            <p>Yon va orqa tomonlar qisqa, yuqori qism esa uzun qoladi — offurlarda ko'rinadi.</p>
-            <a class="btn btn--gold" href="index.html?style=Undercut&service=Zamonaviy kesim (fade)&price=110 000 so'm#booking">Tanlash</a>
+        <article class="rule reveal" data-cat="bolalar">
+          <div class="rule__img"><img src="assets/boys/boy-09.jpg" alt="Yozgi qisqa kesim" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Bolalar · 0–12</span>
+            <div class="rule__head"><h3>Yozgi qisqa kesim</h3><span class="rule__price">50 000</span></div>
+            <p>Issiq kunlar uchun qisqa va parvarishi oson kesim — bolaga qulay, onaga xotirjam.</p>
+            <a class="btn btn--yellow" href="index.html?style=Yozgi qisqa kesim&service=Bolalar kesimi&price=50 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="zamonaviy">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/5337943/pexels-photo-5337943.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pompadour" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">Zamonaviy</span>
-            <div class="style-card__head"><h3>Pompadour</h3><span class="style-card__price">110 000</span></div>
-            <p>Yuqoriga ko'tarilgan hajmli old qism — Elvis uslubidagi klassika reinterpretatsiyasi.</p>
-            <a class="btn btn--gold" href="index.html?style=Pompadour&service=Zamonaviy kesim (fade)&price=110 000 so'm#booking">Tanlash</a>
+        <article class="rule reveal" data-cat="bolalar">
+          <div class="rule__img"><img src="assets/boys/boy-10.jpg" alt="Jingalak kesim" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Bolalar · 0–12</span>
+            <div class="rule__head"><h3>Jingalak kesim</h3><span class="rule__price">60 000</span></div>
+            <p>Jingalak sochlar uchun hajm va shaklni saqlaydigan nozik kesim.</p>
+            <a class="btn btn--yellow" href="index.html?style=Jingalak kesim&service=Bolalar kesimi&price=60 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="saqol">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/6007400/pexels-photo-6007400.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Soqol shakllantirish" loading="lazy" />
-          </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">Saqol bilan</span>
-            <div class="style-card__head"><h3>Saqol shakllantirish</h3><span class="style-card__price">60 000</span></div>
-            <p>Issiq sochiq, pichoq bilan tozalash va sovutuvchi losyon bilan saqolga shakl.</p>
-            <a class="btn btn--gold" href="index.html?style=Saqol shakllantirish&service=Soqol charmbarlash&price=60 000 so'm#booking">Tanlash</a>
+        <article class="rule reveal" data-cat="bolalar">
+          <div class="rule__img"><img src="assets/boys/boy-11.jpg" alt="To'lqinli kesim" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Bolalar · 0–12</span>
+            <div class="rule__head"><h3>To'lqinli (wavy)</h3><span class="rule__price">60 000</span></div>
+            <p>Yumshoq to'lqinli kesim — tabiiy hajm va chiroyli ko'rinish.</p>
+            <a class="btn btn--yellow" href="index.html?style=To'lqinli kesim&service=Bolalar kesimi&price=60 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
-        <article class="style-card reveal" data-cat="saqol">
-          <div class="style-card__img">
-            <img src="https://images.pexels.com/photos/9992820/pexels-photo-9992820.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Soch va saqol to'liq paket" loading="lazy" />
+        <article class="rule reveal" data-cat="klassik">
+          <div class="rule__img"><img src="assets/boys/boy-12.jpg" alt="Ota-bola kesim" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Klassik</span>
+            <div class="rule__head"><h3>Ota-bola kesim</h3><span class="rule__price">90 000</span></div>
+            <p>Bir tashrifda ikkalasi: otaga klassik, bolaga unga mos uslub.</p>
+            <a class="btn btn--yellow" href="index.html?style=Ota-bola kesim&service=Klassik kesim&price=90 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
-          <div class="style-card__body">
-            <span class="style-card__tag">Saqol bilan</span>
-            <div class="style-card__head"><h3>Soch + saqol (to'liq)</h3><span class="style-card__price">140 000</span></div>
-            <p>To'liq paket: istalgan turmak, saqol shakllantirish va issiq sochiq parvarishi.</p>
-            <a class="btn btn--gold" href="index.html?style=Soch %2B saqol (to'liq paket)&service=Soch %2B saqol (to'liq paket)&price=140 000 so'm#booking">Tanlash</a>
+        </article>
+
+        <article class="rule reveal" data-cat="zamonaviy">
+          <div class="rule__img"><img src="assets/boys/boy-13.jpg" alt="Zamonaviy taralgan kesim" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">Zamonaviy</span>
+            <div class="rule__head"><h3>Zamonaviy taralgan</h3><span class="rule__price">90 000</span></div>
+            <p>Yon tomoni tekis, tepasi hajmli — hozirgi trenddagi jonli uslub.</p>
+            <a class="btn btn--yellow" href="index.html?style=Zamonaviy taralgan&service=O'smir fade&price=90 000 so'm#booking">Tanlash <em>↗</em></a>
+          </div>
+        </article>
+
+        <article class="rule reveal" data-cat="osmir">
+          <div class="rule__img"><img src="assets/boys/boy-14.jpg" alt="Keskin yon fade" loading="lazy"></div>
+          <div class="rule__body">
+            <span class="rule__tag">O'smirlar · 13–17</span>
+            <div class="rule__head"><h3>Keskin yon fade</h3><span class="rule__price">70 000</span></div>
+            <p>Aniq o'tishli yon fade — kuchli va zamonaviy o'smir obrazi.</p>
+            <a class="btn btn--yellow" href="index.html?style=Keskin yon fade&service=O'smir fade&price=70 000 so'm#booking">Tanlash <em>↗</em></a>
           </div>
         </article>
 
       </div>
     </div>
   </section>
+</main>
 
-  <!-- ======= FOOTER ======= -->
-  <footer class="footer" id="contact">
-    <div class="container footer__grid">
-      <div>
-        <a href="index.html" class="logo"><span class="logo__icon">✦</span> SARTAROSH</a>
-        <p class="footer__about">O'g'il bolalar va erkaklar uchun zamonaviy barbershop. Toshkent, Chilonzor 19-kvartal.</p>
+<footer class="footer" id="contact">
+  <div class="shell">
+    <div class="footer__top">
+      <a class="logo logo--big" href="index.html" aria-label="SARTAROSH"><span>sartarosh</span><b>.</b><em>salon</em><i aria-hidden="true">✦</i></a>
+      <p>o'g'il bolalar va ayollar uchun</p>
+    </div>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <b>Salon</b>
+        <a href="index.html#about">Biz haqimizda</a>
+        <a href="index.html#services">Xizmatlar</a>
+        <a href="index.html#prices">Narxlar</a>
+        <a href="index.html#addresses">Manzillar</a>
       </div>
-
-      <div>
-        <h4>Ish vaqti</h4>
-        <ul class="footer__list">
-          <li>Dushanba – Juma: 09:00 – 21:00</li>
-          <li>Shanba: 09:00 – 20:00</li>
-          <li>Yakshanba: 10:00 – 18:00</li>
-        </ul>
+      <div class="footer__col">
+        <b>Aloqa</b>
+        <a href="tel:+998901234567">+998 90 123-45-67</a>
+        <a href="https://t.me/sartarosh" target="_blank" rel="noopener">Telegram ↗</a>
+        <span>Dush–Yak: 09:00 – 21:00</span>
       </div>
-
-      <div>
-        <h4>Aloqa</h4>
-        <ul class="footer__list">
-          <li><a href="tel:+998901234567">+998 90 123 45 67</a></li>
-          <li><a href="https://t.me/sartarosh" target="_blank" rel="noopener">Telegram: @sartarosh</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Menyu</h4>
-        <ul class="footer__list">
-          <li><a href="hairstyles.html">Soch turlari</a></li>
-          <li><a href="index.html#prices">Narxlar</a></li>
-          <li><a href="index.html#team">Ustalar</a></li>
-          <li><a href="index.html#booking">Bron qilish</a></li>
-        </ul>
+      <div class="footer__col footer__col--right">
+        <a class="btn btn--yellow" href="index.html#booking">Onlayn yozilish</a>
       </div>
     </div>
-
     <div class="footer__bottom">
-      <div class="container">© <span id="year"></span> SARTAROSH Barbershop. Barcha huquqlar himoyalangan.</div>
+      <span>© <span id="year"></span> sartarosh.salon</span>
+      <a href="index.html">Bosh sahifa ↑</a>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <div class="toast" id="toast" role="alert"></div>
+<div class="m-menu" id="m-menu">
+  <nav>
+    <a href="index.html#about">Salon haqida</a>
+    <a href="index.html#services">Xizmatlar</a>
+    <a href="index.html#prices">Narxlar</a>
+    <a href="index.html#team">Ustalar</a>
+    <a href="index.html#booking">Onlayn yozilish</a>
+  </nav>
+</div>
 
-  <script src="script.js"></script>
-  <script>
-    /* ---------- Katalog filtrlari ---------- */
-    const filterBtns = document.querySelectorAll(".filter-btn");
-    const cards = document.querySelectorAll(".style-card");
-    filterBtns.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        filterBtns.forEach((b) => b.classList.remove("is-active"));
-        btn.classList.add("is-active");
-        const f = btn.dataset.filter;
-        cards.forEach((c) => {
-          const show = f === "all" || c.dataset.cat === f;
-          c.classList.toggle("is-hidden", !show);
-          if (show) c.classList.add("visible");
-        });
+<script src="script.js"></script>
+<script>
+  /* ---------- Katalog filtrlari ---------- */
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".rule");
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach((b) => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+      const f = btn.dataset.filter;
+      cards.forEach((c) => {
+        const show = f === "all" || c.dataset.cat === f;
+        c.classList.toggle("is-hidden", !show);
       });
     });
-  </script>
+  });
+</script>
 </body>
 </html>
